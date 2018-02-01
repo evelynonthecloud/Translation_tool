@@ -11,16 +11,6 @@ then
   exit 1
 fi
 
-while getopts sdn option;do
-case "${OPTION}"
-  in
-      s) SORT=S;;
-      d) DELETE=D;;
-	  n) NORMALIZE=N;;
-	esac
-done
-
-
 sort_properties()
 {
     FILE=$1
