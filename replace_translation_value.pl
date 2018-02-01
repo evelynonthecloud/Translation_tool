@@ -62,7 +62,6 @@ sub compare
 
 					if($nkey eq $okey ){	
 						$ovalue=$nvalue;
-						#print "$ovalue";
 					}
 				}
 			}
@@ -89,7 +88,6 @@ sub readFile
 		$trans = {};
  	
 		my ($key, $value) = ($seg[0], $seg[1]);
-		#print "$key\t$value\n";
 		$trans->{$key}= $value;
 		push @tmp, $trans;
 	}
